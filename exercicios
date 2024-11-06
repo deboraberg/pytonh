@@ -15,12 +15,12 @@ print("O funcionário",nome,"tem um salário de", salario, "em Junho")
 
 4) 3.
 # Solicita dois números inteiros ao usuário
-numero1 = int(input("Digite um valor: "))
-numero2 = int(input("Digite outro valor: "))
 # Calcula a soma
-soma = numero1 + numero2
 # Exibe o resultado
-print(f"A soma entre {numero1} e {numero2} é igual a {soma}.")
+num1 = int(input("digite um valor"))
+num2 = int(input("digite outro valor"))
+soma = num1 + num2
+print ("A  soma  entre".num1,"e",num2, "e igual a",soma)
 
 5) 
 # Solicita as duas notas ao usuário
