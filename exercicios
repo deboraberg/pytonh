@@ -71,24 +71,28 @@ print(f"{cm}cm")
 print(f"{mm}mm")
 
 9) 
-# Solicita a quantidade de dinheiro em reais ao usuário
-reais = float(input("Quanto dinheiro você tem na carteira (em R$): "))
-# Conversão para dólares
-dolares = reais / 3.45
-# Exibe o resultado
-print(f"Com R${reais:.2f}, você pode comprar US${dolares:.2f}.")
+#exercicio 09
+#CONVESAO DE REAL PARA DOLAR
+real = float(input("informe o valor em R$"))
+cotacao = 5.79
+dolar = real / cotacao
+print (f"o valor de R$ {real} e igual a U$ {dolar:.2f})
 
 10) 
-# Solicita a largura e a altura da parede
-largura = float(input("Digite a largura da parede (em metros): "))
-altura = float(input("Digite a altura da parede (em metros): "))
-# Calcula a área da parede
-area = largura * altura
-# Calcula a quantidade de tinta necessária (1 litro cobre 2 m²)
-quantidade_tinta = area / 2
-# Exibe os resultados
-print(f"A área a ser pintada é {area} m².")
-print(f"A quantidade de tinta necessária é {quantidade_tinta} litros.")
+#exercicio10
+altura = float(input("Digite a altura da parede"))
+largura = float(input("Digite a largura da parede"))
+area = altura = largura
+quat_litros = area / 2
+print("será necessario", quat_litros,"litros")
+
+resultado
+    
+Digite a altura da parede
+4
+Digite a largura da parede
+2
+será necessario 1.0 litros
 
 11)
 # Solicita os coeficientes A, B e C da equação do segundo grau
