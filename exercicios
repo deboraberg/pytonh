@@ -95,32 +95,35 @@ Digite a largura da parede
 será necessario 1.0 litros
 
 11)
-# Solicita os coeficientes A, B e C da equação do segundo grau
 A = float(input("Digite o valor de A: "))
 B = float(input("Digite o valor de B: "))
 C = float(input("Digite o valor de C: "))
 # Calcula o valor de Delta
-delta = (B ** 2) - (4 * A * C)
-# Exibe o resultado
+delta = B ** 2 - 4 * A * C
+
 print(f"O valor de Delta é {delta}.")
 
 12) 
-# Solicita o preço do produto
-preco = float(input("Digite o preço do produto: "))
-# Calcula o preço promocional com 5% de desconto
-desconto = preco * 0.05
-preco_promocional = preco - desconto
-# Exibe o resultado
-print(f"O preço promocional é R${preco_promocional:.2f}.")
+#exercicio12
+preco = float(input("informe o preco o produdo"))
+desconto = preco = 0.05
+promocao = preco - desconto
+print("Desconto", desconto)
+print("preco promocional", promocao)
 
 13) 
-# Solicita o salário do funcionário
-salario = float(input("Digite o salário do funcionário: "))
-# Calcula o novo salário com 15% de aumento
-aumento = salario * 0.15
+#exercicio 13 - novo salario
+salario = float(input("digite o valor do salario"))
+aumento = salario*0.15
 novo_salario = salario + aumento
-# Exibe o resultado
-print(f"O novo salário com 15% de aumento é R${novo_salario:.2f}.")
+print(f"aumento de R${aumento:.2f}")
+print(f"novo_salario de R${novo_salario:.2f}")
+
+#calculo do 13° salario
+salario = float (input( "Digite o valor do salario "))
+meses_trab = int(input("Digite o numero de meses trabalhados"))
+decimo = (salario / 12) * meses_trab
+print(f"O valor do 13° R$ {decimo:.2f}")
 
 14) 
 # Solicita a quantidade de Km percorridos e os dias de aluguel
