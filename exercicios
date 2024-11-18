@@ -13,23 +13,17 @@ nome = input("Nome do Funcionário: ")
 salario = float(input("Salário"))
 print("O funcionário",nome,"tem um salário de", salario, "em Junho")
 
-4) 3.
-# Solicita dois números inteiros ao usuário
-# Calcula a soma
-# Exibe o resultado
-num1 = int(input("digite um valor"))
-num2 = int(input("digite outro valor"))
+4) 
+num1 = int (input("digite um  valor"))
+num2 = int (input("digite outro valor"))
 soma = num1 + num2
-print ("A  soma  entre".num1,"e",num2, "e igual a",soma)
+print("A soma entre",num1,"e",num2,"e igual a",soma)
 
 5) 
-# Solicita as duas notas ao usuário
-nota1 = float(input("Nota 1: "))
-nota2 = float(input("Nota 2: "))
-# Calcula a média
-media = (nota1 + nota2) / 2
-# Exibe o resultado
-print(f"A média entre {nota1} e {nota2} é igual a {media:.1f}")
+nota1 = float(input("Digite a nota 1"))
+nota2 = float(input("Digite a nota 2"))
+media =  (nota1+nota2) / 2
+print = ("A media entre a", nota1, "e", nota2, "e igual a",media )
 
 6) 
 # Solicita um número inteiro ao usuário
@@ -71,70 +65,54 @@ print(f"{cm}cm")
 print(f"{mm}mm")
 
 9) 
-#exercicio 09
-#CONVESAO DE REAL PARA DOLAR
-real = float(input("informe o valor em R$"))
-cotacao = 5.79
-dolar = real / cotacao
-print (f"o valor de R$ {real} e igual a U$ {dolar:.2f})
+# Solicita a quantidade de dinheiro em reais ao usuário
+reais = float(input("Quanto dinheiro você tem na carteira (em R$): "))
+# Conversão para dólares
+dolares = reais / 3.45
+# Exibe o resultado
+print(f"Com R${reais:.2f}, você pode comprar US${dolares:.2f}.")
 
 10) 
-#exercicio10
-altura = float(input("Digite a altura da parede"))
-largura = float(input("Digite a largura da parede"))
-area = altura = largura
-quat_litros = area / 2
-print("será necessario", quat_litros,"litros")
-
-resultado
-    
-Digite a altura da parede
-4
-Digite a largura da parede
-2
-será necessario 1.0 litros
+# Solicita a largura e a altura da parede
+largura = float(input("Digite a largura da parede (em metros): "))
+altura = float(input("Digite a altura da parede (em metros): "))
+# Calcula a área da parede
+area = largura * altura
+# Calcula a quantidade de tinta necessária (1 litro cobre 2 m²)
+quantidade_tinta = area / 2
+# Exibe os resultados
+print(f"A área a ser pintada é {area} m².")
+print(f"A quantidade de tinta necessária é {quantidade_tinta} litros.")
 
 11)
-A = float(input("Digite o valor de A: "))
-B = float(input("Digite o valor de B: "))
-C = float(input("Digite o valor de C: "))
-# Calcula o valor de Delta
-delta = B ** 2 - 4 * A * C
-
-print(f"O valor de Delta é {delta}.")
+a = int(input("informe o valor de A"))
+b = int(input("informe o valor de B"))
+c = int(input("informe o valor de C"))
+delta = b ** 2 - 4 * a * c
+print("O valor do teclado = ", delta)
 
 12) 
-#exercicio12
-preco = float(input("informe o preco o produdo"))
-desconto = preco = 0.05
+preco = float(input("informe o preco o ptoduto"))
+desconto = preco * 0.05
 promocao = preco - desconto
-print("Desconto", desconto)
+print("desconto", desconto)
 print("preco promocional", promocao)
 
 13) 
-#exercicio 13 - novo salario
-salario = float(input("digite o valor do salario"))
-aumento = salario*0.15
+# Solicita o salário do funcionário
+salario = float(input("Digite o salário do funcionário: "))
+# Calcula o novo salário com 15% de aumento
+aumento = salario * 0.15
 novo_salario = salario + aumento
-print(f"aumento de R${aumento:.2f}")
-print(f"novo_salario de R${novo_salario:.2f}")
-
-#calculo do 13° salario
-salario = float (input( "Digite o valor do salario "))
-meses_trab = int(input("Digite o numero de meses trabalhados"))
-decimo = (salario / 12) * meses_trab
-print(f"O valor do 13° R$ {decimo:.2f}")
+# Exibe o resultado
+print(f"O novo salário com 15% de aumento é R${novo_salario:.2f}.")
 
 14) 
-# Solicita a quantidade de Km percorridos e os dias de aluguel
-km_percorridos = float(input("Digite a quantidade de Km percorridos: "))
-dias_alugados = int(input("Digite a quantidade de dias que o carro foi alugado: "))
-# Calcula o preço total
-preco_por_dia = 90
-preco_por_km = 0.20
-custo_total = (dias_alugados * preco_por_dia) + (km_percorridos * preco_por_km)
-# Exibe o resultado
-print(f"O preço total a pagar é R${custo_total:.2f}.")
+salario = float(input("Digite o valor do salario"))
+aumento = salario * 0.15
+novo_salario = salario + aumento 
+print(f"aumento de R$ {aumento: .2f}")
+print(f"novo_salario de R$ {novo_salario: .2f}")
 
 15) 
 # Solicita o número de dias trabalhados
@@ -158,3 +136,157 @@ tempo_perdido = total_cigarros * minutos_perdidos_por_cigarro
 dias_perdidos = tempo_perdido / (60 * 24)
 # Exibe o resultado
 print(f"Você perderá aproximadamente {dias_perdidos:.2f} dias de vida.")
+
+
+EXPLICAÇÃO EXTRA
+
+n1 = float(input("Digite uma nota"))
+n2 = float(input("Digite uma nota"))
+media = (n1+n2) /2
+if media >= 6 :
+    print("Aprovado media, ",media)
+else :
+    print("Reprovado media",media)
+
+17)
+velocidade= float(input("informe a velocidade "))
+if velocidade >80 :
+    multa = (velocidade - 80) * 5
+    print(f"velocidade acima de 80 km - multa R$ {multa:.2f}")
+
+
+18)
+ano_atual = int(input("Digite o ano atual "))
+nascimento = int(input("Digite o ano do nascimento "))
+idade = ano_atual - nascimento
+if idade >= 16 :
+    print("pode votar sua idade e", idade, " anos ")
+else :
+        print("Nao pode votar sua idade e ",idade, "anos")
+
+20)
+num = int(input("Digite um numero"))
+resto = num % 2
+if resto == 0 :
+    print(num, "e par")
+else:
+    print(num, "e impar")
+
+21)
+ano = int(input("Digite o ano"))
+if ano % 4 == 0 and ano % 100 != 0 :
+    print("o ano", ano, "e bissexto")
+else:
+    print("o ano", ano, "nao é bissexto")
+-----------
+
+ano = int(input("Digite o ano"))
+if ano % 4 == 0 and ( ano % 100 != 0  or ano % 400 == 0) :
+    print("o ano", ano, "e bissexto")
+else:
+    print("o ano", ano, "nao é bissexto")
+
+22)
+# Leitura do ano atual e ano de nascimento
+ano = int(input("Informe o ano atual: "))
+nascimento = int(input("Informe o ano de nascimento: "))
+idade = ano - nascimento
+if idade < 18:
+    print("Faltam", 18 - idade, "anos para você fazer o alistamento.")
+if idade == 18:
+    print("Você deve se alistar este ano.")
+else:
+    print("Você já tem", idade - 18, "anos que fez o alistamento.")
+
+23)
+nome = input("Digite seu nome")
+sexo = input("Digite o sexo (M/F) ")
+compra = float(input("Digite o valor da compra"))
+if sexo == 'f' :
+    desconto = compra * 0.13
+    val_desconto = "13%"
+else : 
+    desconto = compra * 0.05
+    val_desconto = "5%"
+total_a_pagar = compra - desconto
+print("Você teve um desconto de", val_desconto)
+print(f"O valor final a pagar R$ {total_a_pagar: .2f}")
+
+24)
+distancia = float(input("informe a distancia em km "))
+if distancia <= 200 :
+    valor_corrida = distancia * 0.50
+else:
+    valor_corrida = distancia * 0.45
+    print(f"O valor da corrida e R$ {valor_corrida:.2f}")
+
+25)
+a = int(input("Informe o valor do lado 1"))
+b = int(input("Informe o valor do lado 2"))
+c = int(input("Informe o valor do lado 3"))
+
+if a<b+c and b<a+c and c<a+b :
+    print("os valores informados formam um triangulo")
+else :
+     print("os valores informados não formam um triangulo")
+
+26)
+n1 = int(input("Digite um numero"))
+n2 = int(input("Digite outro numero"))
+
+if n1 > n2 :
+    print("O primeiro valor é o maior")
+elif n2 > n1 :
+    print("O segundo valor é o maior")
+else :
+    print("Nao existe valor maior, os dois sao iguais")
+
+27)
+n1 = float(input("Digite a 1° nota"))
+n2 = float(input("Digite a 2° nota"))
+media = (n1 + n2) /2
+if media < 5 :
+    print("Reprovar com media", media)
+elif media >= 7 :
+    print("Aprovado com media",media)
+else :
+    print("Recuperação com media",media)
+
+28)
+largura = float(input("Informe a largura do terreno: "))  # Corrigido para incluir o fechamento do parêntese
+comprimento = float(input("Informe o comprimento do terreno: "))  # Corrigido para incluir o fechamento do parêntese
+
+area = largura * comprimento
+
+if area < 100:
+    print("Área do terreno é", area, "m. Terreno popular.")
+elif 100 <= area <= 500:
+    print("Área do terreno é", area, "m. Terreno master.")
+else:
+    print("Área do terreno é", area, "m. Terreno VIP.")
+
+29)
+nome = input("Digite o nome")
+salario = float(input("Digite o salario "))
+anos = int(input("Digite quantos anos tr"))
+
+30)
+a = int(input("Informe o valor do lado 1: "))
+b = int(input("Informe o valor do lado 2: "))
+c = int(input("Informe o valor do lado 3: "))
+
+if a < b + c and b < a + c and c < a + b:
+    print("Os valores informados formam um triângulo.")
+    if a == b and a == c:
+        print("EQUILÁTERO")
+    elif a != b and a != c and b != c:
+        print("ESCALENO")
+    else:
+        print("ISÓSCELES")
+else:
+    print("Os valores informados não formam um triângulo.")
+31)
+import random
+#aqui vai sortear um numero de 1 ate 10
+sorteio = random.randrange(1,11)
+print("Numero sorteado e",sorteio)
