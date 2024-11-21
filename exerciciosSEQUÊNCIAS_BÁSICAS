@@ -239,36 +239,30 @@ if n1 > n2 :
 elif n2 > n1 :
     print("O segundo valor é o maior")
 else :
-    print("Nao existe valor maior, os dois sao iguais")
+     print("Não existe valor maior, os dois são iguais")
 
 27)
-n1 = float(input("Digite a 1° nota"))
-n2 = float(input("Digite a 2° nota"))
+n1 = float(input("Digite a 1ª nota"))
+n2 = float(input("Digite a 2ª nota"))
 media = (n1 + n2) /2
 if media < 5 :
     print("Reprovar com media", media)
 elif media >= 7 :
-    print("Aprovado com media",media)
+    print("Aprovado com media", media)
 else :
-    print("Recuperação com media",media)
+    print("Recuperação com media", media)
 
 28)
-largura = float(input("Informe a largura do terreno: "))  # Corrigido para incluir o fechamento do parêntese
-comprimento = float(input("Informe o comprimento do terreno: "))  # Corrigido para incluir o fechamento do parêntese
-
+largura = float(input("Informe a largura do terreno: "))
+comprimento = float(input("Informe o comprimento do terreno: "))
 area = largura * comprimento
 
 if area < 100:
-    print("Área do terreno é", area, "m. Terreno popular.")
+    print("A área do terreno é", area,"m. Terreno popular.")
 elif 100 <= area <= 500:
-    print("Área do terreno é", area, "m. Terreno master.")
+    print("A área do terreno é", area, "m. Terreno master.")
 else:
-    print("Área do terreno é", area, "m. Terreno VIP.")
-
-29)
-nome = input("Digite o nome")
-salario = float(input("Digite o salario "))
-anos = int(input("Digite quantos anos tr"))
+    print("A área do terreno é", area,"m. Terreno VIP.")
 
 30)
 a = int(input("Informe o valor do lado 1: "))
@@ -285,8 +279,196 @@ if a < b + c and b < a + c and c < a + b:
         print("ISÓSCELES")
 else:
     print("Os valores informados não formam um triângulo.")
-31)
-import random
-#aqui vai sortear um numero de 1 ate 10
-sorteio = random.randrange(1,11)
-print("Numero sorteado e",sorteio)
+31)import random
+
+def jogar():
+    opcoes = ['Pedra', 'Papel', 'Tesoura']
+    
+    # Entrada do jogador
+    escolha = input("Escolha (Pedra, Papel ou Tesoura): ").strip().capitalize()
+    if escolha not in opcoes:
+        print("Opção inválida! Tente novamente.")
+        return
+
+    # Escolha do computadorm
+    computador = random.choice(opcoes)
+    print(f"\nVocê escolheu: {escolha
+
+32)
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+def sum(a, b):
+    return (a + b)
+
+a = int(input('Enter 1st number: '))
+b = int(input('Enter 2nd number: '))
+
+print(f'Sum of {a} and {b} is {sum(a, b)}')
+
+33)def aprovar_emprestimo():
+    valor_casa = float(input("Digite o valor da casa: R$ "))
+    salario = float(input("Digite o seu salário: R$ "))
+    anos = int(input("Digite em quantos anos você pretende pagar: "))
+    parcelas = anos * 12
+    prestacao_mensal = valor_casa / parcelas
+    limite = salario * 0.30
+    if prestacao_mensal <= limite:
+        print(f"\nEmpréstimo aprovado! O valor da prestação mensal será R$ {prestacao_mensal:.2f}.")
+    else:
+        print(f"\nEmpréstimo negado! A prestação mensal de R$ {prestacao_mensal:.2f} excede o limite de 30% do seu salário.")
+
+aprovar_emprestimo()
+
+
+34)
+peso = float(input("Digite o seu peso em kg: "))
+altura = float(input("Digite a sua altura em metros: "))
+imc = peso / (altura ** 2)
+print(f"\nSeu IMC é: {imc:.2f}")
+if imc < 18.5:
+    print("Classificação: Abaixo do peso")
+elif 18.5 <= imc < 25:
+     print("Classificação: Peso ideal")
+elif 25 <= imc < 30:
+     print("Classificação: Sobrepeso")
+elif 30 <= imc < 40:
+    print("Classificação: Obesidade")
+else:
+    print("Classificação: Obesidade mórbida")
+
+35)
+tipo_carro = input("Digite o tipo de carro alugado (popular ou luxo): ").strip().lower()
+dias = int(input("Digite o número de dias de aluguel: "))
+km_percorridos = int(input("Digite o número de Km percorridos: "));
+
+# Definir as tarifas de aluguel e custo por km de acordo com o tipo de carro
+if tipo_carro == "popular":
+    aluguel_diario = 90
+    if km_percorridos <= 100:
+        custo_km = 0.20
+    else:
+        custo_km = 0.10
+elif tipo_carro == "luxo":
+    aluguel_diario = 150
+    if km_percorridos <= 200:
+        custo_km = 0.30
+    else:
+        custo_km = 0.25
+else:
+    print("Tipo de carro inválido!")
+    exit()
+
+custo_aluguel = aluguel_diario * dias
+custo_km_total = km_percorridos * custo_km
+total_a_pagar = custo_aluguel + custo_km_total
+print(f"Preço do aluguel: R$ {custo_aluguel:.2f}")
+print(f"Preço pelo Km percorrido: R$ {custo_km_total:.2f}")
+print(f"Total a pagar: R$ {total_a_pagar:.2f}")
+
+resultado
+
+tipo_carro = input("Digite o tipo de carro alugado (popular ou luxo): ").strip().lower()
+dias = int(input("Digite o número de dias de aluguel: "))
+km_percorridos = int(input("Digite o número de Km percorridos: "));
+
+# Definir as tarifas de aluguel e custo por km de acordo com o tipo de carro
+if tipo_carro == "popular":
+    aluguel_diario = 90
+    if km_percorridos <= 100:
+        custo_km = 0.20
+    else:
+        custo_km = 0.10
+elif tipo_carro == "luxo":
+    aluguel_diario = 150
+    if km_percorridos <= 200:
+        custo_km = 0.30
+    else:
+        custo_km = 0.25
+else:
+    print("Tipo de carro inválido!")
+    exit()
+
+custo_aluguel = aluguel_diario * dias
+custo_km_total = km_percorridos * custo_km
+total_a_pagar = custo_aluguel + custo_km_total
+print(f"Preço do aluguel: R$ {custo_aluguel:.2f}")
+print(f"Preço pelo Km percorrido: R$ {custo_km_total:.2f}")
+print(f"Total a pagar: R$ {total_a_pagar:.2f}")
+
+36)
+# Função para calcular os pontos e o dinheiro ganho
+def calcular_pontos_e_dinheiro(horas_atividade):
+    if horas_atividade <= 10:
+        pontos = horas_atividade * 2  # 2 pontos por hora até 10h
+    elif horas_atividade <= 20:
+        pontos = (10 * 2) + ((horas_atividade - 10) * 5)  # 5 pontos por hora de 10h até 20h
+    else:
+        pontos = (10 * 2) + (10 * 5) + ((horas_atividade - 20) * 10)  # 10 pontos por hora acima de 20h
+    
+    dinheiro = pontos * 0.05  # Cada ponto vale R$0,05
+    return pontos, dinheiro
+
+# Entrada de dados
+horas_atividade = float(input("Digite o número de horas de atividade física no mês: "))
+
+# Chama a função para calcular os pontos e o valor em dinheiro
+pontos, dinheiro = calcular_pontos_e_dinheiro(horas_atividade)
+
+# Exibe o resultado
+print(f"Total de pontos: {pontos}")
+print(f"Total de dinheiro: R${dinheiro:.2f}")
+
+resultado Digite o número de horas de atividade física no mês: 
+72
+Total de pontos: 590.0
+Total de dinheiro: R$29.50
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+
+37)def calcular_novo_salario(salario, genero, anos_trabalho):
+    if genero == "feminino":
+        if anos_trabalho < 15:
+            reajuste = 0.05 
+        elif 15 <= anos_trabalho <= 20:
+            reajuste = 0.12  
+        else:
+            reajuste = 0.23  
+    elif genero == "masculino":
+        if anos_trabalho < 20:
+            reajuste = 0.03  
+        elif 20 <= anos_trabalho <= 30:
+            reajuste = 0.13  
+        else:
+            reajuste = 0.25  
+    else:
+        raise ValueError("Gênero inválido! Use 'feminino' ou 'masculino'.")
+    novo_salario = salario * (1 + reajuste)
+    return novo_salario
+salario_atual = float(input("Digite o salário atual do funcionário: R$"))
+genero = input("Digite o gênero do funcionário (feminino/masculino): ").strip().lower()
+anos_trabalho = int(input("Digite o número de anos de trabalho na empresa: "))
+novo_salario = calcular_novo_salario(salario_atual, genero, anos_trabalho)
+print(f"Novo salário do funcionário: R${novo_salario:.2f}")
+
+resultado Digite o salário atual do funcionário: R$
+1000
+Digite o gênero do funcionário (feminino/masculino): 
+feminino
+Digite o número de anos de trabalho na empresa: 
+7
+Novo salário do funcionário: R$1050.00
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+
+
+
+
+
+
+
