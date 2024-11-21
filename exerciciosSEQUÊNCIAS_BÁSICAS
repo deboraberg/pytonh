@@ -147,7 +147,7 @@ if media >= 6 :
     print("Aprovado media, ",media)
 else :
     print("Reprovado media",media)
-
+- CONDIÇÕES BÁSICAS
 17)
 velocidade= float(input("informe a velocidade "))
 if velocidade >80 :
@@ -229,7 +229,7 @@ if a<b+c and b<a+c and c<a+b :
     print("os valores informados formam um triangulo")
 else :
      print("os valores informados não formam um triangulo")
-
+CONDIÇÕES COMPOSTAS
 26)
 n1 = int(input("Digite um numero"))
 n2 = int(input("Digite outro numero"))
