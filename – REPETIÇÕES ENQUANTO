@@ -39,4 +39,33 @@ while cont <= 100 :
         soma = soma + cont
         cont = cont + 2
         
-print("Soma é igual ", soma)        
+print("Soma é igual ", soma)   
+
+47)primeiro_termo = 500
+razao = -50
+ultimo_termo = 0
+soma = 0
+termo_atual = primeiro_termo
+
+while termo_atual >= ultimo_termo:
+    soma = soma + termo_atual  
+    termo_atual = termo_atual + razao 
+
+print("Soma é igual:", soma)
+
+49 pares = 0
+impares = 0
+contador = 0
+
+while contador < 6:
+    numero = int(input("Digite um número: "))
+    
+    if numero % 2 == 0:
+        pares += 1  
+    else:
+        impares += 1  
+    
+    contador += 1
+    
+print("Quantidade de números pares:", pares)
+print("Quantidade de números ímpares:", impares)
