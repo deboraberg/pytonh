@@ -14,3 +14,20 @@ resultado:
 Acabou!!!
 
 39)
+
+
+
+45)primeiro_valor = int(input("digite o primeito valor"))
+ultimo_valor = int(input("digite o ultimo valor"))
+incremento = int(input("digite um encremento"))
+
+
+if primeiro_valor > ultimo_valor :
+   auxiliar = primeiro_valor
+   primeiro_valor = ultimo_valor
+   ultimo_valor = auxiliar
+   
+while primeiro_valor <= ultimo_valor:
+    print(primeiro_valor, end="")
+    primeiro_valor = primeiro_valor + incremento 
+print("Acabou!")        
