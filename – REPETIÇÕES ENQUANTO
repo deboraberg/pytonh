@@ -69,3 +69,29 @@ while contador < 6:
     
 print("Quantidade de números pares:", pares)
 print("Quantidade de números ímpares:", impares)
+
+atividade extra 
+#Criar um programa em python que leia um valor inteiro e multiplo de 10 e escreva a quantidade minima de cédulas de 100,50,20,10. Considere o menor de cedeulas.
+#exemplo
+#valor lido: 250.00
+# 2 notas 100.00
+# 1 nota 50.00
+
+def calcular_cedulas(valor):
+    # Definir as cédulas disponíveis
+    cedulas = [100, 50, 20, 10]
+    
+    # Para cada cédula, calcular quantas são necessárias
+    for cedula in cedulas:
+        quantidade = 0
+        while valor >= cedula:
+            valor -= cedula
+            quantidade += 1
+        if quantidade > 0:
+            print(f"{quantidade} nota(s) de R$ {cedula},00")
+
+# Entrada do valor
+valor = int(input("Digite um valor (múltiplo de 10): "))
+
+# Chama a função para calcular e exibir a quantidade de cédulas
+calcular_cedulas(valor)
