@@ -61,7 +61,7 @@ if quantidade > len(alunos):
     print(f'O número de nomes a serem sorteados é maior do que o número de alunos. Temos apenas {len(alunos)} alunos.')
 else:
     print('Nomes sorteados:')
-    for  in range(quantidade):
+    for contador  in range(quantidade):
         nome_sorteado = random.choice(alunos)
         print(nome_sorteado)
 
